@@ -118,23 +118,31 @@ class _CVViewState extends State<CVView> {
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(
-              onPressed: () async {
-                final updatedCVData = await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => EditCVPage(cvData: widget.cvData),
-                  ),
-                );
+            Center(
+              child: SizedBox(
+                width: 200,
+                child: ElevatedButton(
+                  onPressed: () async {
+                    final updatedCVData = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => EditCVPage(cvData: widget.cvData),
+                      ),
+                    );
 
-                if (updatedCVData != null) {
-                  setState(() {
-                    widget.cvData = updatedCVData;
-                  });
-                }
-              },
-              child: const Text('Edit CV'),
-            ),
+                    if (updatedCVData != null) {
+                      setState(() {
+                        widget.cvData = updatedCVData;
+                      });
+                    }
+                  },
+                  child: const Text(
+                    'Edit CV',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),

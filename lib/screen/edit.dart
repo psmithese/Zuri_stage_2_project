@@ -75,17 +75,25 @@ class _EditCVPageState extends State<EditCVPage> {
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(
-              onPressed: () {
-                final updatedCVData = CVData(
-                  fullName: _fullNameController.text,
-                  slackUsername: _slackUsernameController.text,
-                  githubHandle: _githubHandleController.text,
-                  personalBio: _personalBioController.text,
-                );
-                Navigator.pop(context, updatedCVData);
-              },
-              child: const Text('Save Changes'),
+            Center(
+              child: SizedBox(
+                width: 200,
+                child: ElevatedButton(
+                  onPressed: () {
+                    final updatedCVData = CVData(
+                      fullName: _fullNameController.text,
+                      slackUsername: _slackUsernameController.text,
+                      githubHandle: _githubHandleController.text,
+                      personalBio: _personalBioController.text,
+                    );
+                    Navigator.pop(context, updatedCVData);
+                  },
+                  child: const Text(
+                    'Save Changes',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
             ),
           ],
         ),
