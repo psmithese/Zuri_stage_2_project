@@ -1,16 +1,32 @@
-# curriculum_vitae
+# Curriculum Vitae App
 
-A new Flutter project.
+This is a Flutter app that displays a curriculum vitae (CV). It showcases information about a person's profile, including their name, social media links, and a personal bio.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+
+## Introduction
+
+The Curriculum Vitae App is designed to provide an easy way to present personal information in a visually appealing manner. It includes details such as full name, social media links, and a personal biography.
+
+## Features
+
+- Display full name.
+- Show links to GitHub profile and Slack username.
+- Present a personal biography.
+- Able to edit the cv for corrections or update
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with this project, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository to your local machine:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   ```bash
+   git clone https://github.com/psmithese/curriculum-vitae.git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   
+
